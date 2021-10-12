@@ -1,4 +1,4 @@
-package gp_dataType;
+package week_1;
 
 import java.util.Arrays;
 import java.util.List;

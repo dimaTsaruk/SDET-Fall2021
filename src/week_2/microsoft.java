@@ -1,6 +1,6 @@
-package homework;
+package week_2;
 
-public class test {
+public class microsoft {
     public static void main(String[] args) {
         String e = "@microsoft.com";
         String
