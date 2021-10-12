@@ -1,0 +1,41 @@
+***** GitHub & Linux/Unix commands *****
+ git --version  - ...
+ git config --global user.name "userName"
+ git config --global user.email "userEmail"
+ git config --list  - ...
+ git init - inside the folder initial. as new git project
+ git add . - add all changes to the project
+ git commit -m "message..." - make commit
+ git commit -am "message" - add all skipping staged area
+ git log - open commit history
+ git log --author = "userName" - commit history specif. user
+ git status - shows any changes
+ git add fileName - add current file changes
+ git diff - shows changes that were made
+ git diff -- staged - compare staged area with a repository
+ git rm fileName - remove file
+ git mv fileNameOld fileNameNew - move oldFile to newFile (also can use path /dir/folder/fileNameNew.txt)
+ git checkout (commID(ex.01e7pba)) --fileName - return working copy of fileName (ID can be first few chars )
+ git remote add remoteName http://github.com/userName/reposName.git - add remote to repository
+ git remote - shows remotes list
+ git remote -v - shows remote path
+ git push -u remoteName - push changes to the project
+ git remote remove remoteName - remove current remote
+ git clone url(http://github.com/userName/reposName.git) - clone to dir from current url
+
+
+
+ *** Linux/Unix ***
+pwd, cd, ls - print work directory, change dir, list of files in directory
+ls -la - list of files that control proj.
+mkdir folderName - create folder
+touch fileName - create new fileName
+mv fileNameOld fileNameNew - move command (line 17)
+rmdir folderName - remove empty directory
+rm -r folderName - remove folder and its files
+rm fileName - remove a file
+
+
+
+
+

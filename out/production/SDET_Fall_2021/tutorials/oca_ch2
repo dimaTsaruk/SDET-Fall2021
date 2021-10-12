@@ -1,0 +1,133 @@
+Operators and Statements:
+
+Operator - its  a special symbol that can be applied to a set of variables, values, or literls.
+Java has 3 operators: unary, binary, ternary;
+Operator precedence: (same level of pres: -> from left to right)
+1. post-unary : var++, var--;
+2. pre-unary: ++var, --var;
+3. other unary oper: +, -, !;
+4. mult/div/mod: *, /, %
+5. add/sub: +, -
+6. shift oper: <<, >>, >>>
+7. relational oper: <, >, <=, >=, instanceOf
+8. equal to/ not EqTo: ==, !=
+9. logical: &, ^, |
+10. short-circuit logical: &&, ||
+11. ternary: boolean_exp ? expr_1 : expr_2 ;
+12. assignment oper: =, +=, -=...
+
+*** Numeric Promoion ***
+1. two val have diff data types, Java autom. promotes one val to larger val;
+2. one integral , another floating-point -> promote integral to floating poing data type;
+//Integral types are types that have integer values. These are int, long, short, byte, and char.
+3. smaller dt ( byte, short, char) first promoted to int any time they are used, even if neither of them have int type.
+4. the result == operands (after promotion) data type;
+#1
+int x = 1;
+long y = 33;
+x * y -> long //first rule
+#2
+double x = 39.21;
+float y = 2.1; // compilation error , Java treats float-point literals to double. (2.1f - works)
+x + y -> double // y=2.1f;
+#3
+short x = 14;
+float y = 13;
+double z = 30;
+x * y / z
+1. short x -> int // first rule
+2. int x -> float // second rule
+3. float -> double // first rule
+
+Logical comp:
+boolean y = -true, z = !0; int x = !5;// not compile
+int counter = 0;
+sout(counter); // output 0
+out(++counter); // output 1
+out(counter); // output 1
+out(counter--); // output 1
+out(counter); // output 0
+
+*** Casting primitive values ***
+Casting primitives is requires:
+1. it goes from larger num data to a smaller;
+2. converting from a float point num to  an integral value;( These are int, long, short, byte, and char.)
+
+*** Overflow and Underflow ***
+1. Overflow is when a number is so large that it will no longer fit within the data type, so the system "wraps around"
+to the next lowest value and counts up from there.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
