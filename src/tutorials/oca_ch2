@@ -134,6 +134,138 @@ Supports (at actual writing time) :
 6. enum values
 // boolean and long are not supported;
 
+*** For loop ***
+Starting in Java 5.0 there are now two types for statem. (basic for loop , enhanced for loop)
+1.  Initialization;
+2. check boolean Expression
+3. block (body ) execution
+4. Execute updateStatement
+5. Return to step 2
+
+Some rules:
+(1) loop components are optional : for ( ; ; ;) suot -> works
+
+(2) Adding multiple terms to the for Statement:
+    int x = 0;
+    for(long y = 0, z = 4; x < 5 && y < 10; x++, y++)
+
+(3) Re declaring a Variable in the Initialization Block:
+int x = 0;
+for(long y = 0, x = 4; x < 5 && y < 10; x++, y++) { // x repeated in init block after already being declared before the loop
+System.out.print(x + " "); }
+
+(4) Using Incompatible Data Types in the Init Block:
+for(long y = 0, int x = 4; x < 5 && y<10; x++, y++)  { // DOES NOT COMPILE , different types in one line declared
+System.out.print(x + " ");
+}
+(5) Using Loop Variable Outside the Loop:
+
+for(long y = 0, x = 4; x < 5 && y < 10; x++, y++)
+{ System.out.print(y + " ");
+}
+System.out.print(x); // DOES NOT COMPILE
+
+*** For-each Statement ***
+
+In Java 5.0 appeared enhanced for loop designed for iterating over arrays and Collection objects;
+for (dataType instance : collection)  { // curly braces required for block of multiple st, optional for single;
+    // Body
+}
+1) the right side must ne a build-in Java array, or an obj whose class implem. java.lang.Iterable(Java Collect frameworks);
+2) left side must include a declaration for an instance of a var, whose type matches the type of a memb from right side;
+// OCA exam req. : List & ArrayList;
+
+First : check if right side is an array of Iterable - next -> check that left hand matching type;
+
+*** Optional Labels ***
+A label is an optional pointer to the head of a statement that allows the application flow to jump to it ot brear from it.
+It is a sin
+gle word thad is proceeded by a colon (:) .
+They are used in nested loops.
+
+*** Break statement ***
+Break st - transfers the flow of control out to the enclosing statement;
+Break inside the loop end the loop early .
+The break st can take an optional label parameter. Without parameter the break st will terminate the nearest inner loop
+it is currently in the process of execution. The optional parameter allows us to break out of a higher level outer loop.
+
+*** The continue Statement ***
+Continue ends the current iteration of the loop;
+Like a break , the continue applied to the nearest inner loop under execution using optional label statements to override this behavior.
+
+Advanced flow control usage:
+1. if :  (optional labels - yes, break - no, continue - no)
+2. while  :  (optional labels - yes, break - yes, continue - yes)
+3. do while :  (optional labels - yes, break - yes, continue - yes)
+4. for :  (optional labels - yes, break - yes, continue - yes)
+5. switch :  (optional labels - yes, break - yes, continue - no)
+
+* labels are allowed for any block statement, including those that are preceded with an if-then statement;
+
+*** End for now ***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
