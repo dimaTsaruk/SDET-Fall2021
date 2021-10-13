@@ -56,6 +56,96 @@ Casting primitives is requires:
 *** Overflow and Underflow ***
 1. Overflow is when a number is so large that it will no longer fit within the data type, so the system "wraps around"
 to the next lowest value and counts up from there.
+2. Underflow - when the num is too low to fin tin the data type;
+
+*** Compound assignment operators ***
++= , -=
+int x, z = 3;
+x = x * z; // error , x is not assigned
+
+*** Relational Operators ***
+- return a boolean type;
+>, <, >=, <=
+a instanseof b
+
+*** Logical Operators ***
+- applied to the boolean and numeric data types;
+- when applies to the nums they are compare bits;
+
+& - AND
+| - OR
+^ - Exclusive OR
+
+^ gives true when the operands are different;
+x = true; y = true; (x ^ y) - false
+x = true; y = false;(x ^ y) - true
+x = false; y = true; (x ^ y) - true
+x = false; y = false; (x ^ y) - false
+
+Short circuit operators: && , || - right side of the expression may never be evaluated if the final result
+can be determined by the left hand side of the expression;
+Example:
+int x = 6;
+boolean y = (x >= 6) || (++x <= 7);
+sout(x);
+Output: 6 // right-side of the expression is never evaluated;
+
+*** Equality Operators ***
+== , !=  - equals, not equals;
+Using:
+1. Comparing two numeric primitive types. If the num values of the different data types, the val are
+automatically promoted according prev.rules;
+5 == 5.00 // true, because the left side promoted as a double;
+2. Comparing two boolean values;
+3. Comparing two objects, including null and String values;
+
+Comparison for equality are limited only for previous 3 cases:
+- boolean x = true == 3; // error
+- booleat y = false != "Hello"; //error
+- boolean z = 3 == "Hi"; // error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -56,6 +56,186 @@ Casting primitives is requires:
 *** Overflow and Underflow ***
 1. Overflow is when a number is so large that it will no longer fit within the data type, so the system "wraps around"
 to the next lowest value and counts up from there.
+2. Underflow - when the num is too low to fin tin the data type;
+
+*** Compound assignment operators ***
++= , -=
+int x, z = 3;
+x = x * z; // error , x is not assigned
+
+*** Relational Operators ***
+- return a boolean type;
+>, <, >=, <=
+a instanseof b
+
+*** Logical Operators ***
+- applied to the boolean and numeric data types;
+- when applies to the nums they are compare bits;
+
+& - AND
+| - OR
+^ - Exclusive OR
+
+^ gives true when the operands are different;
+x = true; y = true; (x ^ y) - false
+x = true; y = false;(x ^ y) - true
+x = false; y = true; (x ^ y) - true
+x = false; y = false; (x ^ y) - false
+
+Short circuit operators: && , || - right side of the expression may never be evaluated if the final result
+can be determined by the left hand side of the expression;
+Example:
+int x = 6;
+boolean y = (x >= 6) || (++x <= 7);
+sout(x);
+Output: 6 // right-side of the expression is never evaluated;
+
+*** Equality Operators ***
+== , !=  - equals, not equals;
+Using:
+1. Comparing two numeric primitive types. If the num values of the different data types, the val are
+automatically promoted according prev.rules;
+5 == 5.00 // true, because the left side promoted as a double;
+2. Comparing two boolean values;
+3. Comparing two objects, including null and String values;
+
+Comparison for equality are limited only for previous 3 cases:
+- boolean x = true == 3; // error
+- booleat y = false != "Hello"; //error
+- boolean z = 3 == "Hi"; // error
+
+For obj comparison, the equality operator is applied to the ref. to the obj, not the obj.
+The ref is equal only when they point to the same object of both point to null;
+
+*** Java Statements ***
+Control flow statements - break up the flow of execution by using decision making, looping, and branching , allowing the
+app selectively execute particular segment of code.
+Applied to single expression or a block of Java code. ({})
+
+*** Ternary operator ***
+
+booleanExpression ? expression1 : expression2;
+int y = 10;
+int x = (y > 5) ? (2 * y) : (3 * y);
+
+*** Switch statement ***
+Prior to Java 5.0 var could be only int or those that could be promoted to int(byte, short, char, int);
+In Java 5.0 was added enums;
+In Java 7.0 was added String ;
+switch also supports any of the primitive numeric wrapper classes (Byte, Short, Character, Integer)
+switch can contain 0 or more case branches;
+break, default - are optional; but behaviour of switch would be changed;
+Supports (at actual writing time) :
+1. int and Integer
+2. byte and Byte
+3. short and Short
+4. char and Character
+5. String
+6. enum values
+// boolean and long are not supported;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
