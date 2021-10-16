@@ -37,6 +37,8 @@ EXIT EDIT MODE - > hit "esc"
 
 exit options: -> "q:" -> exit without saving, ":wq" - write and quit (save and quite);
 
+Creating java program this way is an old school style.
+
 
 
 
