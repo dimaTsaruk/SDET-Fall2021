@@ -193,6 +193,17 @@ it is currently in the process of execution. The optional parameter allows us to
 Continue ends the current iteration of the loop;
 Like a break , the continue applied to the nearest inner loop under execution using optional label statements to override this behavior.
 
+Advanced flow control usage:
+1. if :  (optional labels - yes, break - no, continue - no)
+2. while  :  (optional labels - yes, break - yes, continue - yes)
+3. do while :  (optional labels - yes, break - yes, continue - yes)
+4. for :  (optional labels - yes, break - yes, continue - yes)
+5. switch :  (optional labels - yes, break - yes, continue - no)
+
+* labels are allowed for any block statement, including those that are preceded with an if-then statement;
+
+*** End for now ***
+
 
 
 

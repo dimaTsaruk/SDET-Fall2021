@@ -1,0 +1,57 @@
+====================== FRIDAY 15 of October =======================================
+
+whoami - print user name
+ls - list all files in directory
+ls -la - list of hiden files in the folder
+touch fileName - create new file
+OS - software running on a machine. Windows, MacOS, Linux.
+rm -r FolderName - delete empty folder
+rm fileName - del a file
+rmdir FilderName - delete a folder
+ " - " - hyphen or dash
+autocomplete the folder  - type the first chars of the folders name, then hit tab.
+mv OldFile NewFile - rename the folder
+mv OldDirectory NewDirectory - rename the directory
+history -> shows history
+ls -la - (-la) is the option , ls comes with the options commands
+ls -l - a) prints out lists of the files, with extra information about files
+        b) it shows the date and time when the file was created
+        c) shows size of directory in kiloBytes
+        d) numbers of files in directory
+        e) drwx - d means is the directory, " - " - means its file;
+        f) next letter idicate permission levels for users. first three letter are admin user. r -> stands for read
+ls -la -> print hidden files
+ls -r - list in reverse alphabetical order
+ls -lr - revers order and shows all info from -l
+ls -rla - alphabetical order
+ls -t - sort content by time and date
+ls -ltr - list the most recently modified folders first with all info from -l
+vi - file editing cmd. vi allows us to write to a file.
+vi fileName.txt - open file in read mode
+vim - same as vi
+int order to enter edit mode : hit "e" - the INSERT message pop up on the buttom of the terminal. This means youre in the
+ENTER TO -> edit mode and you can edit file (type some text to file)
+vim session you cannot enter cd, rm, ... in this session. (editing session)
+EXIT EDIT MODE - > hit "esc"
+!!!! In order to exit the whole vi session > we have to be in read mode, while we are in read mode , hit ":wq"
+
+exit options: -> "q:" -> exit without saving, ":wq" - write and quit (save and quite);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================
+
+

@@ -4,6 +4,13 @@ public class test {
     public static void main(String[] args) {
 
 
+        for (int i = 0; i < 10;i++ ) {
+           // i = i++;
+            System.out.println(i);
+           // System.out.println("Hello World");
+        }
+
+
 //        //SwitchSample
 //                FIRST_CHAR_LOOP: for (int a = 1; a <= 4; a++) {
 //                    for (char x = 'a'; x <= 'c'; x++) {
