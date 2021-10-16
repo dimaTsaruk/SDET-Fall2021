@@ -39,6 +39,19 @@ exit options: -> "q:" -> exit without saving, ":wq" - write and quit (save and q
 
 Creating java program this way is an old school style.
 
+Homework:
+1) Inside UnixFolder create a Homework folder
+2) In Homework folder create a MultiplicationTable.java file.
+3) in MultiplicationTable.java write a java code to print out a multiplication of 6.
+    ex:
+    6x1=6
+    6x2=12
+    6...
+    ect
+4) compile your java code (java file) using javac cmd
+5) run yuor program using java file
+6) validate your program is correct;
+
 
 
 
